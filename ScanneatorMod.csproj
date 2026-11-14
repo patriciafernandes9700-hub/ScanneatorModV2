@@ -4,13 +4,18 @@
     <LangVersion>latest</LangVersion>
     <AssemblyName>ScanneatorMod</AssemblyName>
     <RootNamespace>ScanneatorMod</RootNamespace>
+    <RestoreAdditionalProjectSources>
+      https://nuget.org;
+      https://bepinex.dev;
+      https://reactor.gg
+    </RestoreAdditionalProjectSources>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Reactor" Version="2.3.1" />
     <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.735" Private="false" ExcludeAssets="runtime;native" />
-    <PackageReference Include="BepInEx.IL2CPP.MSBuild" Version="2.1.0-rc.1" PrivateAssets="all" />
-    <PackageReference Include="AmongUs.GameLibs.Android" Version="2026.8.18" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.IL2CPP.MSBuild" Version="2.1.0-rc.1" PrivateAssets="all" ExcludeAssets="runtime" />
+    <PackageReference Include="AmongUs.GameLibs.Android" Version="2026.6.5" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
