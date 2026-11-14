@@ -12,9 +12,8 @@
 
   <ItemGroup>
     <PackageReference Include="Reactor" Version="2.3.1" />
-    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" />
-    <PackageReference Include="AmongUs.GameLibs.Android" Version="2026.9.29" IncludeAssets="compile" />
-    <PackageReference Include="Il2CppInterop.Runtime" Version="1.4.6-ci.*" />
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.735" Private="false" ExcludeAssets="runtime;native" />
+    <PackageReference Include="AmongUs.GameLibs.Android" Version="2026.9.29" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
