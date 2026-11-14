@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Reactor" Version="*" />
+    <PackageReference Include="Reactor" Version="2.5.1-ci.400" />
     <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" />
-    <PackageReference Include="AmongUs.GameLibs.Android" Version="2026.8.18" />
+    <PackageReference Include="AmongUs.GameLibs.Android" Version="2026.6.5" />
   </ItemGroup>
 
   <ItemGroup>
