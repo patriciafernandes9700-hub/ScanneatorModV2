@@ -5,15 +5,16 @@
     <AssemblyName>ScanneatorMod</AssemblyName>
     <RootNamespace>ScanneatorMod</RootNamespace>
     <RestoreAdditionalProjectSources>
-      https://nuget.org;
-      https://bepinex.dev
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json;
+      https://nuget.reactor.gg/v3/index.json
     </RestoreAdditionalProjectSources>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Reactor" Version="2.3.1" />
-    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.735" Private="false" ExcludeAssets="runtime;native" />
-    <PackageReference Include="AmongUs.GameLibs.Android" Version="2026.9.29" PrivateAssets="all" />
+    <PackageReference Include="Reactor" Version="2.5.1-ci.400" />
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.*" />
+    <PackageReference Include="AmongUs.GameLibs.Android" Version="2026.9.29" />
   </ItemGroup>
 
   <ItemGroup>
