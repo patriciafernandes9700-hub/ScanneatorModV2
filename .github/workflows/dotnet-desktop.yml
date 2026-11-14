@@ -8,9 +8,8 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '6.0.x'
-      - run: dotnet build -c Release --source https://nuget.org --source https://bepinex.dev --source https://reactor.gg
+      - run: dotnet build -c Release
       - uses: actions/upload-artifact@v4
         with:
           name: ScanneatorMod-Android
           path: bin/Release/net6.0/ScanneatorMod.dll
- 
