@@ -13,3 +13,5 @@ jobs:
         with:
           name: ScanneatorMod-Android
           path: bin/Release/net6.0/ScanneatorMod.dll
+
+  
