@@ -1,4 +1,4 @@
-name: Build Mod
+description: name: Build Mod
 on: [push]
 jobs:
   build:
@@ -10,10 +10,7 @@ jobs:
         with:
           dotnet-version: '6.0.x'
       - name: Add NuGet Sources
-        run: |
-          dotnet nuget add source https://nuget.bepinex.dev/v3/index.json -n BepInEx
-          dotnet nuget add source https://nuget.reactor.gg/v3/index.json -n Reactor
-          dotnet nuget add source https://nuget.samboy.dev/v3/index.json -n Samboy
+        run: dotnet nuget add source https://bepinex.dev -n BepInEx
       - name: Build
         run: dotnet build --configuration Release
       - name: Upload DLL
@@ -21,5 +18,3 @@ jobs:
         with:
           name: ScanneatorMod-Android
           path: bin/Release/net6.0/ScanneatorMod.dll
-defaults:
-  
