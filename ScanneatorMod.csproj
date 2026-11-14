@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>ScanneatorMod</AssemblyName>
+    <RootNamespace>ScanneatorMod</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Reactor" Version="2.3.0" />
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.697" />
+    <PackageReference Include="AmongUs.GameLibs.Android" Version="2024.10.29" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="ScanearButton.png" />
+  </ItemGroup>
+</Project>
