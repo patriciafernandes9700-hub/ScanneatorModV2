@@ -1,4 +1,3 @@
-
 using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
@@ -86,7 +85,14 @@ namespace ScanneatorMod
             }
 
             PlayerControl alvoProximo = EncontrarAlvoProximo();
-            scanButton.SetTarget(alvoProximo);
+            if (alvoProximo != null)
+            {
+                scanButton.SetEnabled();
+            }
+            else
+            {
+                scanButton.SetDisabled();
+            }
 
             if (alvoProximo != null && Input.GetMouseButtonDown(0))
             {
