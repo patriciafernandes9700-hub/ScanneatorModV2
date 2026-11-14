@@ -8,8 +8,10 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '6.0.x'
-      - run: dotnet nuget add source https://bepinex.dev -n BepInEx
-      - run: dotnet nuget add source https://reactor.gg -n Reactor
+      - run: |
+          dotnet nuget remove source Reactor || true
+          dotnet nuget add source https://bepinex.dev -n BepInEx
+          dotnet nuget add source https://reactor.gg -n Reactor
       - run: dotnet build -c Release
       - uses: actions/upload-artifact@v4
         with:
