@@ -1,7 +1,6 @@
 using BepInEx;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
-using Reactor;
 using UnityEngine;
 using System.IO;
 using System.Reflection;
@@ -9,7 +8,6 @@ using System.Reflection;
 namespace ScanneatorMod
 {
     [BepInPlugin("com.usuario.scanneator", "Scanneator Mod", "1.0.0")]
-    [BepInDependency(ReactorPlugin.Id)]
     public class ScanneatorPlugin : BasePlugin
     {
         public static Sprite ScanearSprite;
